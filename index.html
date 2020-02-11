@@ -68,14 +68,16 @@
 
         </div>
     </body>
-</html>
-<script>
-    function changeBackgroundColor() {
-        const letters = '0123456789ABCDEF';
-        let color = '#';
-        for (let i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
+
+    <script>
+        function changeBackgroundColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            document.body.style.background = color;
         }
-        document.body.style.background = color;
-    }
-</script>
+    </script>
+    
+</html>
