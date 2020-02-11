@@ -4,7 +4,19 @@
         <title>Decker B. Hinckley</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha256-2YQRJMXD7pIAPHiXr0s+vlRWA7GYJEK0ARns7k2sbHY=" crossorigin="anonymous" />
         <style>
-            img.bio-image { float: left; padding: 0rem 3rem 0rem 1rem; height: 18.5rem; }
+            img.bio-image {
+                float: left;
+                padding: 0rem 3rem 0rem 1rem; height: 18.5rem; 
+                border-radius: 50%
+            }
+
+            .main {
+                background: pink;                
+            }
+
+            .header {
+                color: white
+            }
         </style>
     </head>
     <body>
@@ -21,6 +33,7 @@
                     <!-- Contact Info -->
                     <span><strong>Email:</strong> <a href="mailto:baby.yoda@meme.io">baby.yoda@meme.io</a></span><br>
                     <span><strong>Phone:</strong> 208-829-2122</span>
+                    <span><strong>GitHub</strong> <a href="https://github.com/scaredbutexcited">scaredbutexcited</a></span>
                 </div>
             </div>
 
@@ -56,3 +69,13 @@
         </div>
     </body>
 </html>
+<script>
+    function changeBackgroundColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        document.body.style.background = color;
+    }
+</script>
