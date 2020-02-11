@@ -70,14 +70,14 @@
     </body>
 
 <script>
-        function changeBackgroundColor() {
-            const letters = '0123456789ABCDEF';
-            let color = '#';
-            for (let i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
-            }
-            document.body.style.background = color;
+    function changeBackgroundColor() {
+        const letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
         }
+        document.body.style.background = color;
+    }
 </script>
 
 <button onclick="changeBackgroundColor()">Change Background Color</button>
